@@ -1,0 +1,39 @@
+pragma solidity ^0.8.0;
+
+contract CommonData {
+    // Utils
+    uint16 constant MAX_BPS = 10000;
+
+    // Tokens
+    address constant USDC = 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8;
+    address constant WETH = 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1;
+    address constant ARB = 0x912CE59144191C1204E64559FE8253a0e49E6548;
+    address constant COMP = 0x354A6dA3fcde098F8389cad84b0182725c6C91dE;
+    address constant STG = 0x6694340fc020c5E6B96567843da2df01b2CE1eb6;
+
+    // Chainlink
+    address constant CHAINLINK_USDC = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
+
+    // Stargate
+    address constant STARGATE_ROUTER = 0x53Bf833A5d6c4ddA888F69c22C88C9f356a41614;
+
+    address constant STARGATE_LP_STAKING = 0xeA8DfEE1898a7e0a59f7527F076106d7e44c2176;
+
+    address constant STARGATE_USDC_POOL = 0x892785f33CdeE22A30AEF750F285E18c18040c3e;
+
+    uint16 constant STARGATE_ROUTER_USDC_POOL_ID = 1;
+
+    uint256 constant STARGATE_LP_STAKING_USDC_POOL_ID = 0;
+
+    // Compound V3
+    address constant COMPOUND_V3_REWARDOR= 0x88730d254A2f7e6AC8388c3198aFd694bA9f7fae;
+    address constant COMPOUND_V3_USDC = 0xA5EDBDD9646f8dFF606d7448e414884C7d905dCA;
+
+    // Aave
+    address constant AAVE_POOL = 0x794a61358D6845594F94dc1DB02A252b5b4814aD;
+    address constant AAVE_POOL_DATA_PROVIDER = 0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654;
+    address constant AAVE_REWARDS_CONTROLLER = 0x929EC64c34a17401F460460D4B9390518E5B473e;
+    address constant AAVE_A_USDT = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
+
+    address constant UNISWAP_V3_ROUTER = 0xE592427A0AEce92De3Edee1F18E0157C05861564;
+}

@@ -1,0 +1,149 @@
+👁👁 STORAGE LAYOUT snapshot 👁👁
+=======================
+
+=======================
+➡ SmartFarmooor
+=======================
+
+| Name                | Type                                                           | Slot | Offset | Bytes | Contract                                        |
+|---------------------|----------------------------------------------------------------|------|--------|-------|-------------------------------------------------|
+| _initialized        | uint8                                                          | 0    | 0      | 1     | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _initializing       | bool                                                           | 0    | 1      | 1     | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[50]                                                    | 1    | 0      | 1600  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[50]                                                    | 51   | 0      | 1600  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[50]                                                    | 101  | 0      | 1600  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _paused             | bool                                                           | 151  | 0      | 1     | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[49]                                                    | 152  | 0      | 1568  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _status             | uint256                                                        | 201  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[49]                                                    | 202  | 0      | 1568  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _balances           | mapping(address => uint256)                                    | 251  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _allowances         | mapping(address => mapping(address => uint256))                | 252  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _totalSupply        | uint256                                                        | 253  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _name               | string                                                         | 254  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _symbol             | string                                                         | 255  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[45]                                                    | 256  | 0      | 1440  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[50]                                                    | 301  | 0      | 1600  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _roles              | mapping(bytes32 => struct AccessControlUpgradeable.RoleData)   | 351  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[49]                                                    | 352  | 0      | 1568  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| _roleMembers        | mapping(bytes32 => struct EnumerableSetUpgradeable.AddressSet) | 401  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| __gap               | uint256[49]                                                    | 402  | 0      | 1568  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| isPrivateAccess     | bool                                                           | 451  | 0      | 1     | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| ______gap           | uint256[50]                                                    | 452  | 0      | 1600  | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| feeManager          | address                                                        | 502  | 0      | 20    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| baseToken           | address                                                        | 503  | 0      | 20    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| minHarvestThreshold | uint256                                                        | 504  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| numberOfModules     | uint256                                                        | 505  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| balanceSnapshot     | uint256                                                        | 506  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| performanceFee      | uint16                                                         | 507  | 0      | 2     | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| cap                 | uint256                                                        | 508  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| minAmount           | uint256                                                        | 509  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| automationRules     | address                                                        | 510  | 0      | 20    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+| yieldOptions        | mapping(uint256 => struct ISmartFarmooor.YieldModuleDetails)   | 511  | 0      | 32    | contracts/yield/SmartFarmooor.sol:SmartFarmooor |
+
+=======================
+➡ BaseModule
+=======================
+
+| Name               | Type        | Slot | Offset | Bytes | Contract                                         |
+|--------------------|-------------|------|--------|-------|--------------------------------------------------|
+| _initialized       | uint8       | 0    | 0      | 1     | contracts/yield/module/BaseModule.sol:BaseModule |
+| _initializing      | bool        | 0    | 1      | 1     | contracts/yield/module/BaseModule.sol:BaseModule |
+| __gap              | uint256[50] | 1    | 0      | 1600  | contracts/yield/module/BaseModule.sol:BaseModule |
+| __gap              | uint256[50] | 51   | 0      | 1600  | contracts/yield/module/BaseModule.sol:BaseModule |
+| __gap              | uint256[50] | 101  | 0      | 1600  | contracts/yield/module/BaseModule.sol:BaseModule |
+| _owner             | address     | 151  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| __gap              | uint256[49] | 152  | 0      | 1568  | contracts/yield/module/BaseModule.sol:BaseModule |
+| smartFarmooor      | address     | 201  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| dex                | address     | 202  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| manager            | address     | 203  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| baseToken          | address     | 204  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| executionFee       | uint256     | 205  | 0      | 32    | contracts/yield/module/BaseModule.sol:BaseModule |
+| rewards            | address[]   | 206  | 0      | 32    | contracts/yield/module/BaseModule.sol:BaseModule |
+| name               | string      | 207  | 0      | 32    | contracts/yield/module/BaseModule.sol:BaseModule |
+| wrappedNativeToken | address     | 208  | 0      | 20    | contracts/yield/module/BaseModule.sol:BaseModule |
+| ______gap          | uint256[50] | 209  | 0      | 1600  | contracts/yield/module/BaseModule.sol:BaseModule |
+
+=======================
+➡ StargateYieldModule
+=======================
+
+| Name                        | Type        | Slot | Offset | Bytes | Contract                                                           |
+|-----------------------------|-------------|------|--------|-------|--------------------------------------------------------------------|
+| _initialized                | uint8       | 0    | 0      | 1     | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| _initializing               | bool        | 0    | 1      | 1     | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| __gap                       | uint256[50] | 1    | 0      | 1600  | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| __gap                       | uint256[50] | 51   | 0      | 1600  | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| __gap                       | uint256[50] | 101  | 0      | 1600  | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| _owner                      | address     | 151  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| __gap                       | uint256[49] | 152  | 0      | 1568  | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| smartFarmooor               | address     | 201  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| dex                         | address     | 202  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| manager                     | address     | 203  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| baseToken                   | address     | 204  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| executionFee                | uint256     | 205  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| rewards                     | address[]   | 206  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| name                        | string      | 207  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| wrappedNativeToken          | address     | 208  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| ______gap                   | uint256[50] | 209  | 0      | 1600  | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| lpStaking                   | address     | 259  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| stargateRouter              | address     | 260  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| pool                        | address     | 261  | 0      | 20    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| routerPoolId                | uint16      | 261  | 20     | 2     | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| redeemFromChainId           | uint16      | 261  | 22     | 2     | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| lpStakingPoolId             | uint256     | 262  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| lpProfitWithdrawalThreshold | uint256     | 263  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+| lastPricePerShare           | uint256     | 264  | 0      | 32    | contracts/yield/module/StargateYieldModule.sol:StargateYieldModule |
+
+=======================
+➡ CompoundV2Module
+=======================
+
+| Name               | Type        | Slot | Offset | Bytes | Contract                                                     |
+|--------------------|-------------|------|--------|-------|--------------------------------------------------------------|
+| _initialized       | uint8       | 0    | 0      | 1     | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| _initializing      | bool        | 0    | 1      | 1     | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| __gap              | uint256[50] | 1    | 0      | 1600  | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| __gap              | uint256[50] | 51   | 0      | 1600  | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| __gap              | uint256[50] | 101  | 0      | 1600  | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| _owner             | address     | 151  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| __gap              | uint256[49] | 152  | 0      | 1568  | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| smartFarmooor      | address     | 201  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| dex                | address     | 202  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| manager            | address     | 203  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| baseToken          | address     | 204  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| executionFee       | uint256     | 205  | 0      | 32    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| rewards            | address[]   | 206  | 0      | 32    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| name               | string      | 207  | 0      | 32    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| wrappedNativeToken | address     | 208  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| ______gap          | uint256[50] | 209  | 0      | 1600  | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| comptroller        | address     | 259  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| cToken             | address     | 260  | 0      | 20    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+| lastPricePerShare  | uint256     | 261  | 0      | 32    | contracts/yield/module/CompoundV2Module.sol:CompoundV2Module |
+
+=======================
+➡ AaveYieldModule
+=======================
+
+| Name               | Type        | Slot | Offset | Bytes | Contract                                                   |
+|--------------------|-------------|------|--------|-------|------------------------------------------------------------|
+| _initialized       | uint8       | 0    | 0      | 1     | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| _initializing      | bool        | 0    | 1      | 1     | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| __gap              | uint256[50] | 1    | 0      | 1600  | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| __gap              | uint256[50] | 51   | 0      | 1600  | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| __gap              | uint256[50] | 101  | 0      | 1600  | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| _owner             | address     | 151  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| __gap              | uint256[49] | 152  | 0      | 1568  | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| smartFarmooor      | address     | 201  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| dex                | address     | 202  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| manager            | address     | 203  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| baseToken          | address     | 204  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| executionFee       | uint256     | 205  | 0      | 32    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| rewards            | address[]   | 206  | 0      | 32    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| name               | string      | 207  | 0      | 32    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| wrappedNativeToken | address     | 208  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| ______gap          | uint256[50] | 209  | 0      | 1600  | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| pool               | address     | 259  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| poolDataProvider   | address     | 260  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| rewardsController  | address     | 261  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| aToken             | address     | 262  | 0      | 20    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |
+| lastPricePerShare  | uint256     | 263  | 0      | 32    | contracts/yield/module/AaveYieldModule.sol:AaveYieldModule |

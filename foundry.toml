@@ -1,0 +1,9 @@
+[profile.default]
+src = 'contracts'
+test = 'test'
+out = 'artifacts/contracts'
+libs = ['lib']
+optimizer = true
+optimizer_runs = 10
+etherscan-api-key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+solc_version= '0.8.18'
